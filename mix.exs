@@ -15,7 +15,7 @@ defmodule X509.MixProject do
       description: description(),
       package: package(),
       docs: docs(),
-      xref: [exclude: [IEx, :epp_dodger]]
+      elixirc_options: [no_warn_undefined: [IEx, :epp_dodger]]
     ]
   end
 
